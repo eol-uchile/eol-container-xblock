@@ -1,0 +1,9 @@
+/* CSS for EolContainerXBlock */
+
+.eolcontainer_block .count {
+    font-weight: bold;
+}
+
+.eolcontainer_block p {
+    cursor: pointer;
+}
