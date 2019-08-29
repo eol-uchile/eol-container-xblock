@@ -46,38 +46,24 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
 
     editable_fields = ('type', 'content')
 
-    has_author_view = True
-
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""
         data = pkg_resources.resource_string(__name__, path)
         return data.decode("utf8")
 
     def student_view(self, context=None):
-        html_str = pkg_resources.resource_string(__name__, "static/html/eolcontainer.html")
-        frag = Fragment(unicode(html_str).format(self=self))
-        css_str = pkg_resources.resource_string(__name__, "static/css/eolcontainer.css")
-        frag.add_css(unicode(css_str))
-        js_str = pkg_resources.resource_string(__name__,
-                                               "static/js/src/eolcontainer.js")
-        frag.add_javascript(unicode(js_str))
-        frag.initialize_js('EolContainerXBlock')
-        return frag
-    
-    def author_view(self, context=None):
-        html_str = pkg_resources.resource_string(__name__, "static/html/author_view.html")
-        frag = Fragment(unicode(html_str).format(self=self))
-        css_str = pkg_resources.resource_string(__name__, "static/css/eolcontainer.css")
-        frag.add_css(unicode(css_str))
-        js_str = pkg_resources.resource_string(__name__,
-                                               "static/js/src/eolcontainer.js")
-        frag.add_javascript(unicode(js_str))
+        context_html = self.get_context()
+        template = self.render_template('static/html/eolcontainer.html', context_html)
+        frag = Fragment(template)
+        frag.add_css(self.resource_string("static/css/eolcontainer.css"))
+        frag.add_javascript(self.resource_string("static/js/src/eolcontainer.js"))
         frag.initialize_js('EolContainerXBlock')
         return frag
 
     def get_context(self):
         return {
-            'xblock': self
+            'xblock': self,
+            'location': str(self.location).split('@')[-1]
         }
 
     def render_template(self, template_path, context):
