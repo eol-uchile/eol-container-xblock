@@ -44,7 +44,7 @@
     cursor: pointer;
 }
 
-[id^=Exploremos] .expbot.ocultar {
+[id^=Exploremos] .expbot.toggle {
 	background-image:url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/exploremos-bot1.png);
 }
 
@@ -126,4 +126,46 @@
     color: #000;
     margin-top: 10px;
     text-align: justify;
+}
+
+.eolcontainer_block .Respuesta {
+    margin-bottom:90px;
+    margin-top:30px;
+    min-height: 1px;
+}
+.eolcontainer_block .Respuesta .exptop {
+    position:absolute;
+    top:0px;
+    width: var(--max-width);
+    background-repeat: no-repeat; 
+    height: 38px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/respuesta-top.png);
+    background-color: #f5fbfd;
+}
+.eolcontainer_block .Respuesta .expmid {
+    position:relative;
+    top:36px;
+    width: var(--max-width);
+    box-sizing:border-box;
+    border:1px solid #7800dc;
+    border-top: none;
+    overflow: hidden;
+    background-color: #f5fbfd;
+    text-align: justify;
+    padding: 20px;
+    line-height: 24px;
+}
+.eolcontainer_block .Respuesta .expbot {
+    position:absolute;
+    bottom:-48px;
+    width: var(--max-width);
+    height: 37px;
+    background-repeat: no-repeat; 
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/respuesta-bot1.png);
+    cursor: pointer;
+}
+
+[id^=Respuesta] .expbot.toggle
+{
+	background-image:url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/respuesta-bot2.png);
 }

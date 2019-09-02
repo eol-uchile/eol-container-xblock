@@ -1,11 +1,11 @@
 <div class="eolcontainer_block xmodule_display xmodule_HtmlModule">
-    <div class="{{xblock.type}}" id="{{xblock.type}}_{{location}}">
+    <div class="{{xblock.type}}" id="{{xblock.type}}{{location}}">
         <div class="exptop"></div>
         <div class="expmid">
             {{ xblock.content | safe}} 
         </div>
-        {% if xblock.type == "Exploremos" %}
-            <div class="expbot" onclick="toggleExploremos('{{location}}')"></div>
+        {% if xblock.type == "Exploremos" or xblock.type == "Respuesta" %}
+            <div class="expbot" onclick="toggleContainer('{{xblock.type}}', '{{location}}')"></div>
         {% endif %}
     </div>
 </div>

@@ -30,7 +30,7 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         display_name = _("Tipo"),
         help = _("Selecciona el tipo de capsula"),
         default = "Exploremos",
-        values = ["Contenido", "Observacion", "Exploremos", "Instruccion"],
+        values = ["Contenido", "Observacion", "Exploremos", "Instruccion", "Respuesta"],
         scope = Scope.settings
     )
 
@@ -39,7 +39,7 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         display_name="Contenido de Capsula", 
         multiline_editor='html', 
         resettable_editor=False,
-        default="Contenido de la capsula.", 
+        default="<p>Contenido de la capsula.</p>", 
         scope=Scope.settings,
         help="Indica el contenido de la capsula"
     )
@@ -57,7 +57,11 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         frag = Fragment(template)
         frag.add_css(self.resource_string("static/css/eolcontainer.css"))
         frag.add_javascript(self.resource_string("static/js/src/eolcontainer.js"))
-        frag.initialize_js('EolContainerXBlock')
+        settings = {
+            'location'  : str(self.location).split('@')[-1],
+            'type'      : self.type
+        }
+        frag.initialize_js('EolContainerXBlock', json_args=settings)
         return frag
 
     def get_context(self):

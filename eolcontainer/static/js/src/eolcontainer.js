@@ -1,24 +1,27 @@
-function EolContainerXBlock(runtime, element) {
+function EolContainerXBlock(runtime, element, settings) {
 
     $(function ($) {
+		if(settings.type == "Respuesta") {
+			$('#' + settings.type + settings.location +' .expmid').toggle();
+		}
     });
 }
 
-function toggleExploremos(exploremosId) {	
-	var elemento = $('#Exploremos_'+exploremosId+' .expbot');
+function toggleContainer(type, id) {
+	var elemento = $('#' + type + id +' .expbot');
 
-	if (elemento.hasClass("ocultar")) 	{
-		elemento.removeClass("ocultar");
+	if (elemento.hasClass("toggle")) 	{
+		elemento.removeClass("toggle");
 	}
 	else {
-		elemento.addClass("ocultar");
+		elemento.addClass("toggle");
 	}
 
 	$("body, html").stop(true,true);
 	$("body, html").animate({ 
-        scrollTop: $('#Exploremos_'+exploremosId).offset().top 
+        scrollTop: $('#' + type + id).offset().top 
     }, 1000);
-	$('#Exploremos_'+exploremosId+' .expmid').animate({
+	$('#' + type + id +' .expmid').animate({
 		height: "toggle"
 	},1000);
 }
