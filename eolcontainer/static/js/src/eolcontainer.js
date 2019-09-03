@@ -1,3 +1,14 @@
+/*
+       _=,_
+    o_/6 /#\
+    \__ |##/
+     ='|--\
+       /   #'-.
+       \#|_   _'-. /
+        |/ \_( # |" 
+       C/ ,--___/
+*/
+
 function EolContainerXBlock(runtime, element, settings) {
 
     $(function ($) {

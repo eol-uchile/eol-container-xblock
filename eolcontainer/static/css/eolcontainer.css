@@ -5,7 +5,7 @@
 
 /* Exploremos */
 .eolcontainer_block{
-    margin: auto;
+    margin: 30px auto;
     position:relative;width:var(--max-width);
 }
 .eolcontainer_block .Exploremos{
