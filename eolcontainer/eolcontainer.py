@@ -36,15 +36,25 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
 
     # Content
     content = String(
-        display_name="Contenido de Capsula", 
+        display_name=_("Contenido de Capsula"), 
         multiline_editor='html', 
         resettable_editor=False,
-        default="<p>Contenido de la capsula.</p>", 
+        default=_("<p>Contenido de la capsula.</p>"), 
         scope=Scope.settings,
-        help="Indica el contenido de la capsula"
+        help=_("Indica el contenido de la capsula")
     )
 
-    editable_fields = ('type', 'content')
+    # Text
+    text = String(
+        display_name=_("Contenido de Capsula"), 
+        multiline_editor='html', 
+        resettable_editor=False,
+        default=_("<p>Contenido de la capsula.</p>"), 
+        scope=Scope.settings,
+        help=_("Indica el contenido de la capsula")
+    )
+
+    editable_fields = ('type', 'content', 'text')
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""
