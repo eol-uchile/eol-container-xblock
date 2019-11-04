@@ -169,3 +169,297 @@
 {
 	background-image:url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/respuesta-bot2.png);
 }
+
+/***********************/
+/*** Capsulas Media ***/
+/**********************/
+
+/* Exploremos Media */
+
+.eolcontainer_block .Exploremos-Media{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Exploremos-Media .exptop{
+    position:absolute;
+    top:0px;
+    width: var(--max-width);
+    background-repeat: no-repeat; 
+    height: 49px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/expmedia-top.png);
+    background-size: cover;
+    z-index: 100;
+}
+.eolcontainer_block .Exploremos-Media .expmid{
+    position: relative;
+    top: 20px;
+    width: calc(var(--max-width) - 15px);
+    box-sizing: border-box;
+    border: 1px solid #addef4;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #f5fbfd;
+    text-align: justify;
+    padding: 16px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    line-height: 24px;
+    z-index: 90;
+}
+.eolcontainer_block .Exploremos-Media .expbot{
+    position: absolute;
+    bottom: -45px;
+    width: calc(var(--max-width) - 15px);
+    height: 64px;
+    background-repeat: no-repeat;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/expmedia-bot.png);
+    background-size: cover;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.eolcontainer_block .Exploremos-Media .expbot.toggle.cerrado{
+    position: relative;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/expmedia-bot-sinflecha.png)!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index:80;
+}
+
+/* Caso Media */
+
+.eolcontainer_block .Caso-Media{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Caso-Media .exptop { 
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 50px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/casomedia-top.png);
+    background-size: cover;
+}
+.eolcontainer_block .Caso-Media .expmid{
+    position: relative;
+    top: 49px;
+    width: calc(var(--max-width) - 15px);
+    box-sizing: border-box;
+    border: 1px solid #CDA3E9;
+    border-top: none;
+    overflow: hidden;
+    background-color: #EFDAFD;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 40px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.eolcontainer_block .Caso-Media .expmidtext {
+    background-color: #CCB5DE;
+    padding: 10px;
+    border: 1px solid #DDC7ED;
+    border-radius: 8px;
+}
+
+.eolcontainer_block .Caso-Media .expmidtext {
+    padding-left:10px;
+    padding-right:10px;
+}
+
+/* Problema Media */
+
+.eolcontainer_block .Problema-Media{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Problema-Media .exptop { 
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 50px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/probmedia-top.png);
+    background-size: cover;
+    z-index:100;
+}
+.eolcontainer_block .Problema-Media .expmid{
+    position: relative;
+    top: 10px;
+    height: 100%;
+    width: calc(var(--max-width) - 14px);
+    box-sizing: border-box;
+    border: 1px solid #6FABC6;
+    overflow: hidden;
+    background-color: #BBE8FC;
+    text-align: justify;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+    border-radius: 25px;
+    z-index: 90;
+}
+
+/* Observacion Media */
+
+.eolcontainer_block .Observacion-Media{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Observacion-Media .exptop {
+    position: absolute;
+    top: 0px;
+    left: -3px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 52px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/obsmedia-top.png);
+    background-size: cover;
+    z-index: 1;
+}
+
+.eolcontainer_block .Observacion-Media .expmid{
+    position: relative;
+    top: 49px;
+    width: calc(var(--max-width) - 17px);
+    box-sizing: border-box;
+    border: 1px solid #FF7BB2;
+    border-top: none;
+    overflow: hidden;
+    background-color: #FFEFF4;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* Instruccion Media */
+
+.eolcontainer_block .Instruccion-Media{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Instruccion-Media .exptop { 
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 50px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/instmedia-top.png);
+    background-size: cover;
+}
+.eolcontainer_block .Instruccion-Media .expmid{
+    position: relative;
+    top: 49px;
+    width: calc(var(--max-width) - 16px);
+    box-sizing: border-box;
+    border: 1px solid #FFD100;
+    border-top: none;
+    overflow: hidden;
+    background-color: #FDE574;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* Objetivos Media */
+
+.eolcontainer_block .Objetivos-Media{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Objetivos-Media .exptop {
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 50px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/objmedia-top.png);
+    background-size: contain;
+    z-index: 1;
+}
+
+.eolcontainer_block .Objetivos-Media .expmid {
+    position: relative;
+    top: 46px;
+    width: calc(var(--max-width) - 19px);
+    box-sizing: border-box;
+    border: 1px solid #75D8A2;
+    border-top: none;
+    overflow: hidden;
+    background-color: #DBFFB6;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* Video Media */
+
+.eolcontainer_block .Video-Media{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Video-Media .exptop { 
+    position: absolute;
+    top: 0px;
+    left: -3px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 51px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/videomedia-top.png);
+    background-size: cover;
+    z-index: 100;
+}
+.eolcontainer_block .Video-Media .expmid{
+    position: relative;
+    top: 49px;
+    width: calc(var(--max-width) - 19px);
+    box-sizing: border-box;
+    border: 1px solid #ED9393;
+    border-top: none;
+    overflow: hidden;
+    background-color: #FFE0E0;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.eolcontainer_block .Video-Media .expbot{
+    position: absolute;
+    bottom: -76px;
+    width: calc(var(--max-width) - 17px);
+    left: -1px;
+    height: 58px;
+    background-repeat: no-repeat;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/videomedia-bot.png);
+    background-size: contain;
+    cursor: pointer;
+}
+
+.eolcontainer_block .Video-Media .expbot.toggle.cerrado{
+    top: 48px;
+    left: -1px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/videomedia-bot-sinflecha.png)!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 80;
+}

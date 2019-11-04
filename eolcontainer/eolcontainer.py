@@ -30,7 +30,12 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         display_name = _("Tipo"),
         help = _("Selecciona el tipo de capsula"),
         default = "Exploremos",
-        values = ["Contenido", "Observacion", "Exploremos", "Instruccion", "Respuesta"],
+        values = ["Contenido", "Observacion",
+                  "Exploremos", "Instruccion",
+                  "Respuesta", "Exploremos-Media", 
+                  "Caso-Media", "Problema-Media", 
+                  "Instruccion-Media", "Observacion-Media", 
+                  "Objetivos-Media", "Video-Media"],
         scope = Scope.settings
     )
 
@@ -74,4 +79,38 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         template_str = self.resource_string(template_path)
         template = Template(template_str)
         return template.render(Context(context))
+
+    @staticmethod
+    def workbench_scenarios():
+        """A canned scenario for display in the workbench."""
+        return [
+            ("EolContainerXBlock",
+             """<eolcontainer/>
+             """),
+            ("Multiple EolContainerXBlock",
+             """<vertical_demo>
+                <eolcontainer
+                type="Exploremos-Media"
+                />
+                <eolcontainer
+                type="Problema-Media"
+                />
+                <eolcontainer
+                type="Caso-Media"
+                />
+                <eolcontainer
+                type="Instruccion-Media"
+                />
+                <eolcontainer
+                type="Observacion-Media"
+                />
+                <eolcontainer
+                type="Objetivo-Media"
+                />
+                <eolcontainer
+                type="Video-Media"
+                />
+                </vertical_demo>
+             """),
+        ]
     
