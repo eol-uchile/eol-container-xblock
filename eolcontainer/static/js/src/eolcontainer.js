@@ -37,3 +37,32 @@ function toggleContainer(type, id) {
 	},1000);
 }
 
+
+function toggleContainerMedia(type, id) {
+	var elemento = $('#' + type + id +' .expbot');
+	var elemento2 = $('#' + type + id );
+	var elemento3 = $('#' + type + id +' .expmid');
+
+	if (elemento.hasClass("toggle")) 	{
+		elemento.removeClass("toggle");
+	}
+	else {
+		elemento.addClass("toggle");
+	}
+
+	$("body, html").stop(true,true);
+	$("body, html").animate({ 
+        scrollTop: elemento2.offset().top 
+    }, 1000);
+	elemento3.animate({
+		height: "toggle"
+	},1000, function(){
+		console.log("fin");
+		if (elemento.hasClass("cerrado")) 	{
+			elemento.removeClass("cerrado");
+		}
+		else {
+			elemento.addClass("cerrado");
+		}
+	});
+}
