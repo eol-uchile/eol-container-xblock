@@ -1,20 +1,25 @@
 <div class="eolcontainer_block xmodule_display xmodule_HtmlModule">
     <div class="{{xblock.type}}" id="{{xblock.type}}{{location}}">
-        <div class="exptop"></div>
-        <div class="expmid">
-            {% if xblock.type == "Caso-Media"%}
-                <div class="expmidtext">
-                    {{ xblock.text | safe}}
-                </div>
-            {% else %}
-                {{ xblock.text | safe}} 
+        {% if xblock.show_header %}
+        <div class="exptop">
+            {% if xblock.type == "Caso-Media" %}
+            <p class="case-title">{{ xblock.case_title }}</p>
             {% endif %}
         </div>
-        {% if xblock.type == "Exploremos" or xblock.type == "Respuesta"%}
-            <div class="expbot" onclick='toggleContainer("{{xblock.type}}", "{{location}}")'></div>
         {% endif %}
-        {% if xblock.type == "Exploremos-Media" or xblock.type == "Video-Media"%}
-            <div class="expbot" onclick='toggleContainerMedia("{{xblock.type}}", "{{location}}")'></div>
+        <div class="expmid">
+            {{ xblock.text | safe}}
+        </div>
+        {% if xblock.show_footer %}
+            {% if xblock.type == "Exploremos" or xblock.type == "Respuesta"%}
+                <div class="expbot" onclick='toggleContainer("{{xblock.type}}", "{{location}}")'></div>
+            {% endif %}
+            {% if xblock.type == "Exploremos-Media" or xblock.type == "Video-Media"%}
+                <div class="expbot" onclick='toggleContainerMedia("{{xblock.type}}", "{{location}}")'></div>
+            {% endif %}
+            {% if xblock.type == "Caso-Media" %}
+                <div class="expbot"></div>
+            {% endif %}
         {% endif %}
     </div>
 </div>

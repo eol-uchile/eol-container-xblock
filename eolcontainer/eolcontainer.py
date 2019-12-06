@@ -3,7 +3,7 @@ import pkg_resources
 from django.template import Context, Template
 
 from xblock.core import XBlock
-from xblock.fields import Integer, Scope, String
+from xblock.fields import Integer, Scope, String, Boolean
 from xblock.fragment import Fragment
 from xblockutils.studio_editable import StudioEditableXBlockMixin
 
@@ -35,7 +35,7 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
                   "Respuesta", "Exploremos-Media", 
                   "Caso-Media", "Problema-Media", 
                   "Instruccion-Media", "Observacion-Media", 
-                  "Objetivos-Media", "Video-Media"],
+                  "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media"],
         scope = Scope.settings
     )
 
@@ -49,7 +49,33 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         help=_("Indica el contenido de la capsula")
     )
 
-    editable_fields = ('type', 'text')
+    # Case Title
+    case_title = String(
+        display_name=_("Titulo del Caso"),
+        help=_("Titulo que aparece arriba del caso"),
+        default="Caso",
+        scope=Scope.settings,
+    )
+
+    show_header = Boolean(
+        display_name=_('Mostrar Header'),
+        help=_(
+            'Si se muestra o no el header'
+        ),
+        default=True,
+        scope=Scope.settings,
+    )
+
+    show_footer = Boolean(
+        display_name=_('Mostrar Footer'),
+        help=_(
+            'Si se muestra o no el footer'
+        ),
+        default=True,
+        scope=Scope.settings,
+    )
+
+    editable_fields = ('type', 'case_title', 'text', 'show_header', 'show_footer')
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""
@@ -96,7 +122,13 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
                 type="Problema-Media"
                 />
                 <eolcontainer
+                type="Pedagogica-Media"
+                />
+                <eolcontainer
                 type="Caso-Media"
+                show_footer="True"
+                show_header="True"
+                case_title="Un caso de prueba"
                 />
                 <eolcontainer
                 type="Instruccion-Media"
@@ -105,10 +137,16 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
                 type="Observacion-Media"
                 />
                 <eolcontainer
-                type="Objetivo-Media"
+                type="Objetivos-Media"
                 />
                 <eolcontainer
                 type="Video-Media"
+                />
+                <eolcontainer
+                type="Disciplinar-Media"
+                />
+                <eolcontainer
+                type="Respuesta"
                 />
                 </vertical_demo>
              """),

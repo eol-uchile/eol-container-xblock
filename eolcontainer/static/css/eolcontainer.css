@@ -128,6 +128,7 @@
     text-align: justify;
 }
 
+/* Respuesta */
 .eolcontainer_block .Respuesta {
     margin-bottom:90px;
     margin-top:30px;
@@ -198,7 +199,7 @@
     border: 1px solid #addef4;
     border-radius: 25px;
     overflow: hidden;
-    background-color: #f5fbfd;
+    /*background-color: #f5fbfd;*/
     text-align: justify;
     padding: 16px;
     padding-bottom: 30px;
@@ -212,7 +213,7 @@
     width: calc(var(--max-width) - 15px);
     height: 64px;
     background-repeat: no-repeat;
-    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/expmedia-bot.png);
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/expmedia-botblanco.png);
     background-size: cover;
     cursor: pointer;
     z-index: 100;
@@ -235,39 +236,48 @@
 
 .eolcontainer_block .Caso-Media .exptop { 
     position: absolute;
-    top: 0px;
-    width: var(--max-width);
+    left: -50px;
+    width: calc(var(--max-width) + 35px);
     background-repeat: no-repeat;
     height: 50px;
-    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/casomedia-top.png);
-    background-size: cover;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/iniciocaso.png);
+    background-size: contain;
 }
-.eolcontainer_block .Caso-Media .expmid{
+
+.eolcontainer_block .Caso-Media .expmid {
     position: relative;
-    top: 49px;
+    top: 70px;
     width: calc(var(--max-width) - 15px);
     box-sizing: border-box;
-    border: 1px solid #CDA3E9;
-    border-top: none;
+    border-left: 10px solid #9572b9;
+    border-right: 10px solid #f3f6f6;
     overflow: hidden;
-    background-color: #EFDAFD;
     text-align: justify;
     padding: 20px;
-    padding-bottom: 40px;
+    padding-top: 0px;
     line-height: 24px;
-    border-radius: 0px 0px 20px 20px;
 }
 
-.eolcontainer_block .Caso-Media .expmidtext {
-    background-color: #CCB5DE;
-    padding: 10px;
-    border: 1px solid #DDC7ED;
-    border-radius: 8px;
+.eolcontainer_block .Caso-Media .expmid p {
+    margin-top: 0px;
 }
 
-.eolcontainer_block .Caso-Media .expmidtext {
-    padding-left:10px;
-    padding-right:10px;
+.eolcontainer_block .Caso-Media .expbot {
+    position: relative;
+    bottom: -76px;
+    width: calc(var(--max-width) - 14px);
+    height: 58px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/fincaso.png);
+    background-size: contain;
+}
+
+p.case-title {
+    padding-left: 60px;
+    color: white!important;
+    margin-top: 4px!important;
+    font-size: 24px!important;
 }
 
 /* Problema Media */
@@ -295,7 +305,7 @@
     box-sizing: border-box;
     border: 1px solid #6FABC6;
     overflow: hidden;
-    background-color: #BBE8FC;
+    /*background-color: #BBE8FC;*/
     text-align: justify;
     padding: 20px;
     padding-top: 58px;
@@ -333,7 +343,7 @@
     border: 1px solid #FF7BB2;
     border-top: none;
     overflow: hidden;
-    background-color: #FFEFF4;
+    /*background-color: #FFEFF4;*/
     text-align: justify;
     padding: 20px;
     padding-bottom: 30px;
@@ -366,7 +376,7 @@
     border: 1px solid #FFD100;
     border-top: none;
     overflow: hidden;
-    background-color: #FDE574;
+    /*background-color: #FDE574;*/
     text-align: justify;
     padding: 20px;
     padding-bottom: 30px;
@@ -401,7 +411,7 @@
     border: 1px solid #75D8A2;
     border-top: none;
     overflow: hidden;
-    background-color: #DBFFB6;
+    /*background-color: #DBFFB6;*/
     text-align: justify;
     padding: 20px;
     padding-bottom: 30px;
@@ -435,7 +445,7 @@
     border: 1px solid #ED9393;
     border-top: none;
     overflow: hidden;
-    background-color: #FFE0E0;
+    /*background-color: #FFE0E0;*/
     text-align: justify;
     padding: 20px;
     padding-bottom: 30px;
@@ -450,7 +460,7 @@
     left: -1px;
     height: 58px;
     background-repeat: no-repeat;
-    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/videomedia-bot.png);
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/videomedia-botblanco.png);
     background-size: contain;
     cursor: pointer;
 }
@@ -462,4 +472,73 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 80;
+}
+
+/* Pedagogica Media */
+
+.eolcontainer_block .Pedagogica-Media{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Pedagogica-Media .exptop { 
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 50px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/pedmedia-top.png);
+    background-size: cover;
+    z-index:100;
+}
+.eolcontainer_block .Pedagogica-Media .expmid{
+    position: relative;
+    top: 10px;
+    height: 100%;
+    width: calc(var(--max-width) - 14px);
+    box-sizing: border-box;
+    border: 1px solid #0DB7AD;
+    overflow: hidden;
+    /*background-color: #EFFFF9;*/
+    text-align: justify;
+    padding: 20px;
+    padding-top: 58px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+    border-radius: 25px;
+    z-index: 90;
+}
+
+/* Disciplinar Media */
+
+.eolcontainer_block .Disciplinar-Media{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Disciplinar-Media .exptop {
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 52px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/dismedia-top.png);
+    background-size: contain;
+    z-index: 1;
+}
+
+.eolcontainer_block .Disciplinar-Media .expmid{
+    position: relative;
+    top: 49px;
+    width: calc(var(--max-width) - 14px);
+    box-sizing: border-box;
+    border: 1px solid #f4b181;
+    border-top: none;
+    overflow: hidden;
+    text-align: justify;
+    padding: 20px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
 }
