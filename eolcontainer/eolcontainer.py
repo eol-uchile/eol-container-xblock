@@ -53,7 +53,7 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
     # Case Title
     case_title = String(
         display_name=_("Titulo del Caso"),
-        help=_("Titulo que aparece arriba del caso"),
+        help=_("(Solo capsula CASO) Titulo que aparece arriba del caso"),
         default="Caso",
         scope=Scope.settings,
     )
@@ -61,7 +61,7 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
     show_header = Boolean(
         display_name=_('Mostrar Header'),
         help=_(
-            'Si se muestra o no el header'
+            '(Solo capsula CASO) Si se muestra o no el header'
         ),
         default=True,
         scope=Scope.settings,
@@ -70,13 +70,13 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
     show_footer = Boolean(
         display_name=_('Mostrar Footer'),
         help=_(
-            'Si se muestra o no el footer'
+            '(Solo capsula CASO) Si se muestra o no el footer'
         ),
         default=True,
         scope=Scope.settings,
     )
 
-    editable_fields = ('type', 'case_title', 'text', 'show_header', 'show_footer')
+    editable_fields = ('type', 'text', 'case_title', 'show_header', 'show_footer')
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""
