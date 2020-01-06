@@ -36,7 +36,7 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
                   "Exploremos-Media", 
                   "Caso-Media", "Problema-Media", 
                   "Instruccion-Media", "Observacion-Media", 
-                  "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media"],
+                  "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media", "Reflexionemos"],
         scope = Scope.settings
     )
 
@@ -121,6 +121,9 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
                 />
                 <eolcontainer
                 type="Problema-Media"
+                />
+                <eolcontainer
+                type="Reflexionemos"
                 />
                 <eolcontainer
                 type="Pedagogica-Media"
