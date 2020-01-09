@@ -568,3 +568,39 @@ p.case-title {
     line-height: 24px;
     border-radius: 0px 0px 20px 20px;
 }
+
+/* Reflexionemos */
+
+.eolcontainer_block .Reflexionemos{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Reflexionemos .exptop { 
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 50px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/reflexionemos.png);
+    background-size: cover;
+    z-index:100;
+}
+.eolcontainer_block .Reflexionemos .expmid{
+    position: relative;
+    top: 10px;
+    height: 100%;
+    width: calc(var(--max-width) - 14px);
+    box-sizing: border-box;
+    border: 1px solid #52A998;
+    overflow: hidden;
+    /*background-color: #BBE8FC;*/
+    text-align: justify;
+    padding: 20px;
+    padding-top: 58px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+    border-radius: 25px;
+    z-index: 90;
+}
