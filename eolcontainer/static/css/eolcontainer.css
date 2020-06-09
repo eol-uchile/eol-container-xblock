@@ -167,7 +167,7 @@
     background-repeat: no-repeat; 
     height: 38px;
     background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/respuesta-top.png);
-    background-color: #f5fbfd;
+    background-color: #ffffff;
 }
 .eolcontainer_block .Respuesta .expmid {
     position:relative;
@@ -177,13 +177,14 @@
     border:1px solid #7800dc;
     border-top: none;
     overflow: hidden;
-    background-color: #f5fbfd;
+    background-color: #ffffff;
     text-align: justify;
     padding: 20px;
     line-height: 24px;
     display: block!important;
 }
 .eolcontainer_block .Respuesta .expbot {
+    display:none;
     position:absolute;
     bottom:-48px;
     width: var(--max-width);
