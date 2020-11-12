@@ -1,13 +1,44 @@
 <div class="eolcontainer_block xmodule_display xmodule_HtmlModule">
     <div class="{{xblock.type}}" id="{{xblock.type}}{{location}}">
         {% if xblock.show_header %}
-        <div class="exptop">
-            {% if xblock.type == "Caso-Media" %}
-            <p class="case-title">{{ xblock.case_title }}</p>
+            {% if xblock.type == "Generica" %}
+                <div class="exptop" style="    background-color: {{ xblock.background_color_header }};
+                border-color: {{ xblock.border_color }};">
+            {% else %}
+                <div class="exptop">
             {% endif %}
-        </div>
+                {% if xblock.type == "Caso-Media" %}
+                <p class="case-title">{{ xblock.case_title }}</p>
+                {% endif %}
+                {% if xblock.type == "Generica" %}
+                <p class="generic-container-title">{{ xblock.case_title }}</p>
+                {% endif %}
+                {% if xblock.type == "Vinculacion" %}
+                <p class="generic-container-title">VINCULACIÓN CON LA PRÁCTICA</p>
+                {% endif %}
+                {% if xblock.type == "Curricular" %}
+                <p class="generic-container-title">CÁPSULA CURRICULAR</p>
+                {% endif %}
+                {% if xblock.type == "Didactica" %}
+                <p class="generic-container-title">CÁPSULA DIDÁCTICA</p>
+                {% endif %}
+            </div>
         {% endif %}
+        {% if xblock.type == "Generica" %}
+            <div class="container-icon" style="
+                                background-image: url({{ xblock.icon_url }});
+                                background-color: {{ xblock.background_color_icon }};
+                                border-color: {{ xblock.border_color }};
+                            "></div>
+        {% endif %}
+        {% if xblock.type == "Vinculacion" or xblock.type == "Curricular" or xblock.type == "Didactica" %}
+            <div class="container-icon"></div>
+        {% endif %}
+        {% if xblock.type == "Generica" %}
+        <div class="expmid" style="border-color: {{ xblock.border_color }}">
+        {% else %}
         <div class="expmid">
+        {% endif %}
             {{ xblock.text | safe}}
         </div>
         {% if xblock.show_footer %}
