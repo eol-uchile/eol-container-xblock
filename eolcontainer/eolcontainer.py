@@ -30,13 +30,14 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         display_name = _("Tipo"),
         help = _("Selecciona el tipo de capsula"),
         default = "Exploremos",
-        values = ["Contenido", "Observacion",
+        values = ["Generica","Contenido", "Observacion",
                   "Exploremos", "Instruccion",
                   "Respuesta", "Problema",
                   "Exploremos-Media", 
                   "Caso-Media", "Problema-Media", 
                   "Instruccion-Media", "Observacion-Media", 
-                  "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media", "Reflexionemos"],
+                  "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media", "Reflexionemos",
+                  "Vinculacion","Curricular","Didactica"],
         scope = Scope.settings
     )
 
@@ -76,7 +77,36 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         scope=Scope.settings,
     )
 
-    editable_fields = ('type', 'text', 'case_title', 'show_header', 'show_footer')
+    #Generic Container Fields
+    background_color_header = String(
+        display_name=_("Color Fondo Header"),
+        help=_("(Solo capsula GENERICA) Color de fondo del header en capsula generica"),
+        default="#2B9580",
+        scope=Scope.settings,
+    )
+
+    background_color_icon = String(
+        display_name=_("Color Fondo Icono"),
+        help=_("(Solo capsula GENERICA) Color de fondo del icono en capsula generica"),
+        default="#BBE8FC",
+        scope=Scope.settings,
+    )
+
+    border_color = String(
+        display_name=_("Color Borde"),
+        help=_("(Solo capsula GENERICA) Color borde de capsula"),
+        default="#52A998",
+        scope=Scope.settings,
+    )
+
+    icon_url = String(
+        display_name=_("Icono"),
+        help=_("(Solo capsula GENERICA) url imagen del icono"),
+        default="https://static.sumaysigue.uchile.cl/Didactica/produccion/assets/img/book.png",
+        scope=Scope.settings,
+    )
+
+    editable_fields = ('type', 'text', 'case_title', 'show_header', 'show_footer','background_color_header','background_color_icon','border_color','icon_url')
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""
