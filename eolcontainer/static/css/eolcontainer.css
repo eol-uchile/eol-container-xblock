@@ -878,20 +878,20 @@ p.case-title {
     position: absolute;
     width: var(--max-width);
     background-repeat: no-repeat;
-    height: 64px;
+    height: 72px;
     background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_caso_top.png);
     background-size: cover;
 }
 
 .eolcontainer_block .Caso-RedFid .exptop .case-title {
-    padding-left: 90px;
-    padding-top: 24px;
-    font-size: 24px !important;
+    padding-left: 95px;
+    padding-top: 8px;
+    font-size: 32px !important;
 }
 
 .eolcontainer_block .Caso-RedFid .expmid {
     position: relative;
-    top: 26px;
+    top: 40px;
     height: 100%;
     width: var(--max-width);
     box-sizing: border-box;
@@ -912,16 +912,3 @@ p.case-title {
 .eolcontainer_block .Caso-RedFid .expmid p {
     margin-top: 0px;
 }
-
-/*
-.eolcontainer_block .Caso-Redfid .expbot {
-    position: relative;
-    bottom: -76px;
-    width: calc(var(--max-width) - 14px);
-    height: 58px;
-    margin-top: 10px;
-    background-repeat: no-repeat;
-    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/fincaso.png);
-    background-size: contain;
-}
-*/
