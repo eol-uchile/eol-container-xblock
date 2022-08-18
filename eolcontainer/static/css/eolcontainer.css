@@ -875,13 +875,15 @@ p.case-title {
 }
 
 .eolcontainer_block .Caso-RedFid .exptop { 
+
     position: absolute;
-    left: -50px;
-    width: calc(var(--max-width) + 35px);
+    top: 0px;
+    left: -2px;
+    width: var(--max-width);
     background-repeat: no-repeat;
     height: 50px;
     background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_caso_top.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 .eolcontainer_block .Caso-RedFid .expmid {
@@ -891,7 +893,7 @@ p.case-title {
     width: calc(var(--max-width) - 16px);
     box-sizing: border-box;
     border: 1px solid;
-    border-color:  #8f5903;
+    border-color:  #AD65DB;
     overflow: hidden;
     text-align: justify;
     padding: 20px;
