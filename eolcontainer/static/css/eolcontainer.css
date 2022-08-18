@@ -876,11 +876,12 @@ p.case-title {
 
 .eolcontainer_block .Caso-RedFid .exptop { 
     position: absolute;
-    width: var(--max-width);
+    width: calc(var(--max-width) - 16px);
     background-repeat: no-repeat;
-    height: 72px;
+    height: 70px;
     background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_caso_top.png);
     background-size: cover;
+    left: 16px;
 }
 
 .eolcontainer_block .Caso-RedFid .exptop .case-title {
@@ -891,21 +892,22 @@ p.case-title {
 
 .eolcontainer_block .Caso-RedFid .expmid {
     position: relative;
-    top: 40px;
+    top: 0px;
     height: 100%;
-    width: var(--max-width);
+    width: calc( var(--max-width) - 16px);
     box-sizing: border-box;
     border: 2px solid;
-    border-color:  #AD65DB;
+
+    border-color: #AD65DB;
     overflow: hidden;
     text-align: justify;
-    padding: 20px;
-    padding-top: 58px;
+
+    padding-top: 94px;
     padding-bottom: 30px;
+
     line-height: 24px;
-    border-radius: 0px 0px 20px 20px;
-    border-radius: 25px;
-    border-top: 0px;
+    border-radius: 16px;
+    left: 16px;
 }
 
 
@@ -920,29 +922,39 @@ p.case-title {
     margin-bottom: 70px;
 }
 .eolcontainer_block .Exploremos-RedFid .exptop{
-    position:absolute;
-    top:0px;
+    position: absolute;
+    top: 0px;
     width: var(--max-width);
-    background-repeat: no-repeat; 
-    height: 49px;
+    background-repeat: no-repeat;
+    height: 73px;
     background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_exploremos.png);
     background-size: cover;
     z-index: 100;
 }
 .eolcontainer_block .Exploremos-RedFid .expmid{
     position: relative;
-    top: 20px;
-    width: calc(var(--max-width) - 15px);
+    top: 7px;
+    left: 16px;
+
+    width: calc(var(--max-width) - 16px);
+
     box-sizing: border-box;
     border: 2px solid #0C8AA8;
-    border-radius: 25px;
+    border-radius: 17px;
     overflow: hidden;
-    /*background-color: #f5fbfd;*/
+    background-color: #f5fbfd;
     text-align: justify;
-    padding: 16px;
+
+    padding-top: 82px;
+    padding-right: 16px;
     padding-bottom: 30px;
-    padding-top: 40px;
+    padding-left: 16px;
+    
     line-height: 24px;
     z-index: 90;
-    border-top: 0px;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+
+
 }
