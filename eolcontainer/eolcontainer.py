@@ -37,7 +37,8 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
                   "Caso-Media", "Problema-Media", 
                   "Instruccion-Media", "Observacion-Media", 
                   "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media", "Reflexionemos",
-                  "Vinculacion","Curricular","Didactica"],
+                  "Vinculacion","Curricular","Didactica",
+                  "Caso-RedFid"],
         scope = Scope.settings
     )
 
@@ -147,42 +148,48 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
             ("Multiple EolContainerXBlock",
              """<vertical_demo>
                 <eolcontainer
-                type="Exploremos-Media"
+                    type="Exploremos-Media"
                 />
                 <eolcontainer
-                type="Problema-Media"
+                    type="Problema-Media"
                 />
                 <eolcontainer
-                type="Reflexionemos"
+                    type="Reflexionemos"
                 />
                 <eolcontainer
-                type="Pedagogica-Media"
+                    type="Pedagogica-Media"
                 />
                 <eolcontainer
-                type="Caso-Media"
-                show_footer="True"
-                show_header="True"
-                case_title="Un caso de prueba"
+                    type="Caso-Media"
+                    show_footer="True"
+                    show_header="True"
+                    case_title="Un caso de prueba"
                 />
                 <eolcontainer
-                type="Instruccion-Media"
+                    type="Instruccion-Media"
                 />
                 <eolcontainer
-                type="Observacion-Media"
+                    type="Observacion-Media"
                 />
                 <eolcontainer
-                type="Objetivos-Media"
+                    type="Objetivos-Media"
                 />
                 <eolcontainer
-                type="Video-Media"
+                    type="Video-Media"
                 />
                 <eolcontainer
-                type="Disciplinar-Media"
+                    type="Disciplinar-Media"
                 />
                 <eolcontainer
-                type="Respuesta"
+                    type="Respuesta"
                 />
                 </vertical_demo>
+                <eolcontainer
+                    type="Caso-RedFid"
+                    show_footer="True"
+                    show_header="False"
+                    case_title="Un caso de prueba"
+                />
              """),
         ]
     
