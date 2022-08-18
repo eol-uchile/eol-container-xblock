@@ -10,6 +10,9 @@
                 {% if xblock.type == "Caso-Media" %}
                 <p class="case-title">{{ xblock.case_title }}</p>
                 {% endif %}
+                {% if xblock.type == "Caso-RedFid" %}
+                <p class="case-title">{{ xblock.case_title }}</p>
+                {% endif %}
                 {% if xblock.type == "Generica" %}
                 <p class="generic-container-title">{{ xblock.case_title }}</p>
                 {% endif %}
