@@ -903,9 +903,9 @@ p.case-title {
     text-align: justify;
 
     padding-top: 94px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-bottom: 30px;
-    padding-left: 16px;
-    padding-right: 16px;
 
     line-height: 24px;
     border-radius: 16px;
@@ -948,9 +948,10 @@ p.case-title {
     text-align: justify;
 
     padding-top: 82px;
-    padding-right: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-bottom: 30px;
-    padding-left: 16px;
+
     
     line-height: 24px;
     z-index: 90;
@@ -991,9 +992,10 @@ p.case-title {
     text-align: justify;
 
     padding-top: 82px;
-    padding-right: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-bottom: 30px;
-    padding-left: 16px;
+
     
     line-height: 24px;
     z-index: 90;
