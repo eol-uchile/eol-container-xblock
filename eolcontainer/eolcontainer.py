@@ -38,7 +38,7 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
                   "Instruccion-Media", "Observacion-Media", 
                   "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media", "Reflexionemos",
                   "Vinculacion","Curricular","Didactica",
-                  "Caso-RedFid","Exploremos-RedFid","Lenguaje-RedFid"],
+                  "Caso-RedFid","Exploremos-RedFid","Observacion-RedFid","Lenguaje-RedFid","Instruccion-RedFid"],
         scope = Scope.settings
     )
 
@@ -194,7 +194,13 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
                     type="Exploremos-RedFid"
                 />
                 <eolcontainer
+                    type="Observacion-RedFid"
+                />
+                <eolcontainer
                     type="Lenguaje-RedFid"
+                />
+                <eolcontainer
+                    type="Instruccion-RedFid"
                 />
              """),
         ]

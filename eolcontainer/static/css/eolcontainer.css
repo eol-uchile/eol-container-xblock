@@ -961,6 +961,46 @@ p.case-title {
 
 }
 
+/* Observación RedFid */
+
+.eolcontainer_block .Observacion-RedFid{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Observacion-RedFid .exptop { 
+    position: absolute;
+    width: calc(var(--max-width) - 16px);
+    background-repeat: no-repeat;
+    height: 70px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_observacion.png);
+    background-size: cover;
+    left: 16px;
+}
+
+.eolcontainer_block .Observacion-RedFid .expmid {
+    position: relative;
+    top: 0px;
+    height: 100%;
+    width: calc( var(--max-width) - 16px);
+    box-sizing: border-box;
+    border: 2px solid;
+
+    border-color: #009AB6;
+    overflow: hidden;
+    text-align: justify;
+
+    padding-top: 94px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+    border-radius: 16px;
+    left: 16px;
+}
+
+
 /* Lenguaje Profesional RedFid */
 
 .eolcontainer_block .Lenguaje-RedFid{
@@ -1004,3 +1044,48 @@ p.case-title {
     border-top-style: none;
 
 }
+
+/* Instrucción RedFid */
+
+.eolcontainer_block .Instruccion-RedFid{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Instruccion-RedFid .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 73px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_instruccion.png);
+    background-size: cover;
+    z-index: 100;
+}
+.eolcontainer_block .Instruccion-RedFid .expmid{
+    position: relative;
+    top: 7px;
+    left: 16px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 2px solid #EA8C47;
+    border-radius: 17px;
+    overflow: hidden;
+    /* background-color: #f5fbfd; */
+    text-align: justify;
+
+    padding-top: 82px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+
+}
+
