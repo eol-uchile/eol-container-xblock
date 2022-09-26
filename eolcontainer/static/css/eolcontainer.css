@@ -48,6 +48,71 @@
 	background-image:url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/exploremos-bot1.png);
 }
 
+/* Generica */
+.eolcontainer_block .Generica{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Generica .exptop{
+    position: absolute;
+    top: 0px;
+    /* width: var(--max-width); */
+    background-repeat: no-repeat;
+    height: 50px;
+    background-image: none;
+    background-size: cover;
+    z-index: 100;
+    /* background-color: transparent; */
+    /* border-color: transparent; */
+    width: calc(var(--max-width) - 16px);
+    border: 1px solid;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.eolcontainer_block .Generica .expmid{
+    position: relative;
+    top: 10px;
+    height: 100%;
+    width: calc(var(--max-width) - 16px);
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color: transparent;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: justify;
+    padding: 20px;
+    padding-top: 58px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+    border-radius: 25px;
+}
+
+.eolcontainer_block .Generica p.generic-container-title {
+    padding-left: 25px;
+    color: white!important;
+    margin-top: 13px!important;
+    font-size: 17px!important;
+    font-weight: 600;
+}
+
+.eolcontainer_block .Generica .container-icon {
+    position: absolute;
+    top: -6px;
+    right: 3px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    width: 52px;
+    height: 52px;
+    z-index: 200;
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: transparent;
+    border: 1px solid;
+}
+
 
 /* Contenido */
 .eolcontainer_block .Contenido {
@@ -255,6 +320,15 @@
     z-index:80;
 }
 
+/* Caso */
+
+p.case-title {
+    padding-left: 60px;
+    color: white!important;
+    margin-top: 4px!important;
+    font-size: 24px!important;
+}
+
 /* Caso Media */
 
 .eolcontainer_block .Caso-Media{
@@ -299,13 +373,6 @@
     background-repeat: no-repeat;
     background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/fincaso.png);
     background-size: contain;
-}
-
-p.case-title {
-    padding-left: 60px;
-    color: white!important;
-    margin-top: 4px!important;
-    font-size: 24px!important;
 }
 
 /* Problema Media */
@@ -606,3 +673,419 @@ p.case-title {
     border-radius: 25px;
     z-index: 90;
 }
+
+/* Vinculacion */
+.eolcontainer_block .Vinculacion{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Vinculacion .exptop{
+    position: absolute;
+    top: 0px;
+    background-repeat: no-repeat;
+    height: 50px;
+    background-image: none;
+    background-size: cover;
+    z-index: 100;
+    background-color: #f53ad8;
+    width: calc(var(--max-width) - 16px);
+    border: 1px solid;
+    border-color: #be21cc;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.eolcontainer_block .Vinculacion .expmid{
+    position: relative;
+    top: 10px;
+    height: 100%;
+    width: calc(var(--max-width) - 16px);
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color:  #be21cc;
+    overflow: hidden;
+    text-align: justify;
+    padding: 20px;
+    padding-top: 58px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+    border-radius: 25px;
+}
+
+.eolcontainer_block .Vinculacion p.generic-container-title {
+    padding-left: 25px;
+    color: white!important;
+    margin-top: 13px!important;
+    font-size: 17px!important;
+    font-weight: 600;
+}
+
+.eolcontainer_block .Vinculacion .container-icon {
+    position: absolute;
+    top: -6px;
+    right: 3px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 62%;
+    width: 52px;
+    height: 52px;
+    z-index: 200;
+    border-radius: 50%;
+    background-color: #ffdbfe;
+    border: 1px solid;
+    border-color: #be21cc;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/icon_vinculacion.png);
+}
+
+/* Curricular */
+.eolcontainer_block .Curricular{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Curricular .exptop{
+    position: absolute;
+    top: 0px;
+    background-repeat: no-repeat;
+    height: 50px;
+    background-image: none;
+    background-size: cover;
+    z-index: 100;
+    background-color: #097781;
+    width: calc(var(--max-width) - 16px);
+    border: 1px solid;
+    border-color: #abc9d6;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.eolcontainer_block .Curricular .expmid{
+    position: relative;
+    top: 10px;
+    height: 100%;
+    width: calc(var(--max-width) - 16px);
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color:  #abc9d6;
+    overflow: hidden;
+    text-align: justify;
+    padding: 20px;
+    padding-top: 58px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+    border-radius: 25px;
+}
+
+.eolcontainer_block .Curricular p.generic-container-title {
+    padding-left: 25px;
+    color: white!important;
+    margin-top: 13px!important;
+    font-size: 17px!important;
+    font-weight: 600;
+}
+
+.eolcontainer_block .Curricular .container-icon {
+    position: absolute;
+    top: -6px;
+    right: 3px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 53%;
+    width: 52px;
+    height: 52px;
+    z-index: 200;
+    border-radius: 50%;
+    background-color: #85dee6;
+    border: 1px solid;
+    border-color: #abc9d6;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/icon_curricular.png);
+}
+
+/* Didactica */
+.eolcontainer_block .Didactica{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Didactica .exptop{
+    position: absolute;
+    top: 0px;
+    background-repeat: no-repeat;
+    height: 50px;
+    background-image: none;
+    background-size: cover;
+    z-index: 100;
+    background-color: #905902;
+    width: calc(var(--max-width) - 16px);
+    border: 1px solid;
+    border-color: #8f5903;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.eolcontainer_block .Didactica .expmid{
+    position: relative;
+    top: 10px;
+    height: 100%;
+    width: calc(var(--max-width) - 16px);
+    box-sizing: border-box;
+    border: 1px solid;
+    border-color:  #8f5903;
+    overflow: hidden;
+    text-align: justify;
+    padding: 20px;
+    padding-top: 58px;
+    padding-bottom: 30px;
+    line-height: 24px;
+    border-radius: 0px 0px 20px 20px;
+    border-radius: 25px;
+}
+
+.eolcontainer_block .Didactica p.generic-container-title {
+    padding-left: 25px;
+    color: white!important;
+    margin-top: 13px!important;
+    font-size: 17px!important;
+    font-weight: 600;
+}
+
+.eolcontainer_block .Didactica .container-icon {
+    position: absolute;
+    top: -6px;
+    right: 3px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    width: 52px;
+    height: 52px;
+    z-index: 200;
+    border-radius: 50%;
+    background-color: #f2ca8d;
+    border: 1px solid;
+    border-color: #8f5903;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/icon_didactica.png);
+}
+
+/* RedFid */
+/* Caso RedFid */
+
+.eolcontainer_block .Caso-RedFid{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Caso-RedFid .exptop { 
+    position: absolute;
+    width: calc(var(--max-width) - 16px);
+    background-repeat: no-repeat;
+    height: 70px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_caso_top.png);
+    background-size: cover;
+    left: 16px;
+}
+
+.eolcontainer_block .Caso-RedFid .exptop .case-title {
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: 26px !important;
+}
+
+.eolcontainer_block .Caso-RedFid .expmid {
+    position: relative;
+    top: 0px;
+    height: 100%;
+    width: calc( var(--max-width) - 16px);
+    box-sizing: border-box;
+    border: 2px solid;
+
+    border-color: #AD65DB;
+    overflow: hidden;
+    text-align: justify;
+
+    padding-top: 112px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+    border-radius: 16px;
+    left: 16px;
+}
+
+
+.eolcontainer_block .Caso-RedFid .expmid p {
+    margin-top: 0px;
+}
+
+/* Exploremos RedFid */
+
+.eolcontainer_block .Exploremos-RedFid{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Exploremos-RedFid .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 73px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_exploremos.png);
+    background-size: cover;
+    z-index: 100;
+}
+.eolcontainer_block .Exploremos-RedFid .expmid{
+    position: relative;
+    top: 7px;
+    left: 16px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 2px solid #0C8AA8;
+    border-radius: 17px;
+    overflow: hidden;
+    /* background-color: #f5fbfd; */
+    text-align: justify;
+
+    padding-top: 112px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+
+}
+
+/* Observación RedFid */
+
+.eolcontainer_block .Observacion-RedFid{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+
+.eolcontainer_block .Observacion-RedFid .exptop { 
+    position: absolute;
+    width: calc(var(--max-width) - 16px);
+    background-repeat: no-repeat;
+    height: 70px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_observacion.png);
+    background-size: cover;
+    left: 16px;
+}
+
+.eolcontainer_block .Observacion-RedFid .expmid {
+    position: relative;
+    top: 0px;
+    height: 100%;
+    width: calc( var(--max-width) - 16px);
+    box-sizing: border-box;
+    border: 2px solid;
+
+    border-color: #009AB6;
+    overflow: hidden;
+    text-align: justify;
+
+    padding-top: 112px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+    border-radius: 16px;
+    left: 16px;
+}
+
+
+/* Lenguaje Profesional RedFid */
+
+.eolcontainer_block .Lenguaje-RedFid{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Lenguaje-RedFid .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 73px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_lenguaje_top.png);
+    background-size: cover;
+    z-index: 100;
+}
+.eolcontainer_block .Lenguaje-RedFid .expmid{
+    position: relative;
+    top: 7px;
+    left: 16px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 2px solid #606CDD;
+    border-radius: 17px;
+    overflow: hidden;
+    /* background-color: #f5fbfd; */
+    text-align: justify;
+
+    padding-top: 112px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+
+}
+
+/* Instrucción RedFid */
+
+.eolcontainer_block .Instruccion-RedFid{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Instruccion-RedFid .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 73px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_instruccion.png);
+    background-size: cover;
+    z-index: 100;
+}
+.eolcontainer_block .Instruccion-RedFid .expmid{
+    position: relative;
+    top: 7px;
+    left: 16px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 2px solid #EA8C47;
+    border-radius: 17px;
+    overflow: hidden;
+    /* background-color: #f5fbfd; */
+    text-align: justify;
+
+    padding-top: 112px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+
+}
+

@@ -30,13 +30,15 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         display_name = _("Tipo"),
         help = _("Selecciona el tipo de capsula"),
         default = "Exploremos",
-        values = ["Contenido", "Observacion",
+        values = ["Generica","Contenido", "Observacion",
                   "Exploremos", "Instruccion",
                   "Respuesta", "Problema",
                   "Exploremos-Media", 
                   "Caso-Media", "Problema-Media", 
                   "Instruccion-Media", "Observacion-Media", 
-                  "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media", "Reflexionemos"],
+                  "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media", "Reflexionemos",
+                  "Vinculacion","Curricular","Didactica",
+                  "Caso-RedFid","Exploremos-RedFid","Observacion-RedFid","Lenguaje-RedFid","Instruccion-RedFid"],
         scope = Scope.settings
     )
 
@@ -76,7 +78,36 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         scope=Scope.settings,
     )
 
-    editable_fields = ('type', 'text', 'case_title', 'show_header', 'show_footer')
+    #Generic Container Fields
+    background_color_header = String(
+        display_name=_("Color Fondo Header"),
+        help=_("(Solo capsula GENERICA) Color de fondo del header en capsula generica"),
+        default="#2B9580",
+        scope=Scope.settings,
+    )
+
+    background_color_icon = String(
+        display_name=_("Color Fondo Icono"),
+        help=_("(Solo capsula GENERICA) Color de fondo del icono en capsula generica"),
+        default="#BBE8FC",
+        scope=Scope.settings,
+    )
+
+    border_color = String(
+        display_name=_("Color Borde"),
+        help=_("(Solo capsula GENERICA) Color borde de capsula"),
+        default="#52A998",
+        scope=Scope.settings,
+    )
+
+    icon_url = String(
+        display_name=_("Icono"),
+        help=_("(Solo capsula GENERICA) url imagen del icono"),
+        default="https://static.sumaysigue.uchile.cl/Didactica/produccion/assets/img/book.png",
+        scope=Scope.settings,
+    )
+
+    editable_fields = ('type', 'text', 'case_title', 'show_header', 'show_footer','background_color_header','background_color_icon','border_color','icon_url')
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""
@@ -117,42 +148,60 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
             ("Multiple EolContainerXBlock",
              """<vertical_demo>
                 <eolcontainer
-                type="Exploremos-Media"
+                    type="Exploremos-Media"
                 />
                 <eolcontainer
-                type="Problema-Media"
+                    type="Problema-Media"
                 />
                 <eolcontainer
-                type="Reflexionemos"
+                    type="Reflexionemos"
                 />
                 <eolcontainer
-                type="Pedagogica-Media"
+                    type="Pedagogica-Media"
                 />
                 <eolcontainer
-                type="Caso-Media"
-                show_footer="True"
-                show_header="True"
-                case_title="Un caso de prueba"
+                    type="Caso-Media"
+                    show_footer="True"
+                    show_header="True"
+                    case_title="Un caso de prueba"
                 />
                 <eolcontainer
-                type="Instruccion-Media"
+                    type="Instruccion-Media"
                 />
                 <eolcontainer
-                type="Observacion-Media"
+                    type="Observacion-Media"
                 />
                 <eolcontainer
-                type="Objetivos-Media"
+                    type="Objetivos-Media"
                 />
                 <eolcontainer
-                type="Video-Media"
+                    type="Video-Media"
                 />
                 <eolcontainer
-                type="Disciplinar-Media"
+                    type="Disciplinar-Media"
                 />
                 <eolcontainer
-                type="Respuesta"
+                    type="Respuesta"
                 />
                 </vertical_demo>
+                <eolcontainer
+                    type="Caso-RedFid"
+                    show_footer="True"
+                    show_header="False"
+                    case_title="Un caso de prueba"
+                />
+                <eolcontainer
+                    type="Exploremos-RedFid"
+                />
+                <eolcontainer
+                    type="Observacion-RedFid"
+                />
+                <eolcontainer
+                    type="Lenguaje-RedFid"
+                />
+                <eolcontainer
+                    type="Instruccion-RedFid"
+                />
              """),
         ]
     
