@@ -879,7 +879,7 @@ p.case-title {
     width: calc(var(--max-width) - 16px);
     background-repeat: no-repeat;
     height: 70px;
-    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_caso_top.png);
+    background-image: url(https://static.sumaysigue.uchile.cl/redfid/Assets/img/redfid_caso_top.png);
     background-size: cover;
     left: 16px;
 }
@@ -929,7 +929,7 @@ p.case-title {
     width: var(--max-width);
     background-repeat: no-repeat;
     height: 73px;
-    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_exploremos.png);
+    background-image: url(https://static.sumaysigue.uchile.cl/redfid/Assets/img/redfid_exploremos.png);
     background-size: cover;
     z-index: 100;
 }
@@ -973,7 +973,7 @@ p.case-title {
     width: calc(var(--max-width) - 16px);
     background-repeat: no-repeat;
     height: 70px;
-    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_observacion.png);
+    background-image: url(https://static.sumaysigue.uchile.cl/redfid/Assets/img/redfid_observacion.png);
     background-size: cover;
     left: 16px;
 }
@@ -1013,7 +1013,7 @@ p.case-title {
     width: var(--max-width);
     background-repeat: no-repeat;
     height: 73px;
-    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_lenguaje_top.png);
+    background-image: url(https://static.sumaysigue.uchile.cl/redfid/Assets/img/redfid_lenguaje_top.png);
     background-size: cover;
     z-index: 100;
 }
@@ -1057,7 +1057,7 @@ p.case-title {
     width: var(--max-width);
     background-repeat: no-repeat;
     height: 73px;
-    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_instruccion.png);
+    background-image: url(https://static.sumaysigue.uchile.cl/redfid/Assets/img/redfid_instruccion.png);
     background-size: cover;
     z-index: 100;
 }
@@ -1101,7 +1101,7 @@ p.case-title {
     width: calc(var(--max-width) - 16px);
     background-repeat: no-repeat;
     height: 70px;
-    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/redfid_situacion.png);
+    background-image: url(https://static.sumaysigue.uchile.cl/redfid/Assets/img/redfid_situacion.png);
     background-size: cover;
     left: 16px;
 }
