@@ -1127,3 +1127,47 @@ p.case-title {
     border-radius: 16px;
     left: 16px;
 }
+
+/* Instrucción RedFid */
+
+.eolcontainer_block .Video-RedFid{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Video-RedFid .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 73px;
+    background-image: url(https://static.sumaysigue.uchile.cl/redfid/Assets/img/redfid_video.png);
+    background-size: cover;
+    z-index: 100;
+}
+.eolcontainer_block .Videos-RedFid .expmid{
+    position: relative;
+    top: 7px;
+    left: 16px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 2px solid #e25973;
+    border-radius: 17px;
+    overflow: hidden;
+    /* background-color: #f5fbfd; */
+    text-align: justify;
+
+    padding-top: 112px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+
+}
