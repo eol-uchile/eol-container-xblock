@@ -1171,3 +1171,44 @@ p.case-title {
     border-top-style: none;
 
 }
+
+.eolcontainer-responsive{
+    width:100% !important;
+}
+.eolcontainer-responsive .exptop, .eolcontainer-responsive .expmid, .eolcontainer-responsive .expbot{
+    width:100% !important;
+    /* background-size:cover !important; */
+}
+
+.eolcontainer-responsive .Contenido,
+.eolcontainer-responsive .Instruccion,
+.eolcontainer-responsive .Problema,
+.eolcontainer-responsive .Observacion{
+    width:100% !important;
+}
+.eolcontainer-responsive > div{
+    width: 100% !important;
+}
+.eolcontainer-responsive .Contenido .exptop,
+.eolcontainer-responsive .Instruccion .exptop,
+.eolcontainer-responsive .Problema .exptop,
+.eolcontainer-responsive .Observacion .exptop{
+    width:52px !important;
+}
+
+.eolcontainer-responsive .Exploremos .exptop, .eolcontainer-responsive .Exploremos .expbot,
+.eolcontainer-responsive .Objetivos-Media .exptop, .eolcontainer-responsive .Objetivos-Media .expbot,
+.eolcontainer-responsive .Disciplinar-Media .exptop, .eolcontainer-responsive .Disciplinar-Media .expbot,
+.eolcontainer-responsive .Video-Media .exptop, .eolcontainer-responsive .Video-Media .expbot,
+.eolcontainer-responsive .Caso-Media .exptop, .eolcontainer-responsive .Caso-Media .expbot,
+.eolcontainer-responsive .Respuesta .exptop, .eolcontainer-responsive .Respuesta .expbot{
+    background-size: cover !important;
+}
+.eolcontainer-responsive .Caso-Media .exptop,
+.eolcontainer-responsive .Caso-Media .expbot{
+    left:0
+}
+.eolcontainer-responsive{
+    margin:2px auto;
+}
+
