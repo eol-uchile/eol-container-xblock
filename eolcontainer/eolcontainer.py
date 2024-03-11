@@ -78,6 +78,15 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         scope=Scope.settings,
     )
 
+    responsive = Boolean(
+        display_name=_('Ancho de columna completo (Responsive)'),
+        help=_(
+                'Expande el tamaño de la cápsula al 100% de la columna.'
+            ),
+        default=False,
+        scope=Scope.settings,
+    )
+
     #Generic Container Fields
     background_color_header = String(
         display_name=_("Color Fondo Header"),
@@ -107,7 +116,7 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         scope=Scope.settings,
     )
 
-    editable_fields = ('type', 'text', 'case_title', 'show_header', 'show_footer','background_color_header','background_color_icon','border_color','icon_url')
+    editable_fields = ('type', 'text', 'case_title', 'show_header', 'show_footer', 'responsive','background_color_header','background_color_icon','border_color','icon_url')
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""
@@ -207,6 +216,10 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
                 />
                 <eolcontainer
                     type="Video-RedFid"
+                />
+                <eolcontainer
+                    responsive="True"
+                    case_title="Prueba responsive"
                 />
              """),
         ]

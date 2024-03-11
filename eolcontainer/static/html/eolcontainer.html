@@ -1,4 +1,8 @@
+{% if xblock.responsive %}
+<div class="eolcontainer_block xmodule_display xmodule_HtmlModule eolcontainer-responsive">
+{% else %}
 <div class="eolcontainer_block xmodule_display xmodule_HtmlModule">
+{% endif %}
     <div class="{{xblock.type}}" id="{{xblock.type}}{{location}}">
         {% if xblock.show_header %}
             {% if xblock.type == "Generica" %}
