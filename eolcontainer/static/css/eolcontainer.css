@@ -138,6 +138,7 @@
     margin-top: 10px;
     color: #000;
     text-align: justify;
+    margin-bottom: -15px;
 }
 
 /* Problema */
@@ -203,6 +204,7 @@
     padding: 20px;
     position: relative;
     width: 780px;
+    padding-bottom: 5px;
 }
 .eolcontainer_block .Observacion .exptop {
     background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/recomendacion.png);
@@ -217,6 +219,7 @@
     color: #000;
     margin-top: 10px;
     text-align: justify;
+    margin-bottom: -16px;
 }
 
 /* Respuesta */
@@ -327,6 +330,15 @@ p.case-title {
     color: white!important;
     margin-top: 4px!important;
     font-size: 24px!important;
+}
+
+
+.eolcontainer-responsive{
+    width:100% !important;
+}
+.eolcontainer-responsive .exptop, .eolcontainer-responsive .expmid, .eolcontainer-responsive .expbot{
+    width:100% !important;
+    /* background-size:cover !important; */
 }
 
 /* Caso Media */
@@ -441,7 +453,7 @@ p.case-title {
     /*background-color: #FFEFF4;*/
     text-align: justify;
     padding: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     line-height: 24px;
     border-radius: 0px 0px 20px 20px;
 }
@@ -474,7 +486,7 @@ p.case-title {
     /*background-color: #FDE574;*/
     text-align: justify;
     padding: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     line-height: 24px;
     border-radius: 0px 0px 20px 20px;
 }
@@ -1172,14 +1184,6 @@ p.case-title {
 
 }
 
-.eolcontainer-responsive{
-    width:100% !important;
-}
-.eolcontainer-responsive .exptop, .eolcontainer-responsive .expmid, .eolcontainer-responsive .expbot{
-    width:100% !important;
-    /* background-size:cover !important; */
-}
-
 .eolcontainer-responsive .Contenido,
 .eolcontainer-responsive .Instruccion,
 .eolcontainer-responsive .Problema,
@@ -1212,3 +1216,131 @@ p.case-title {
     margin:2px auto;
 }
 
+/*****************************/
+/*** Capsulas Media 2024 ****/
+/***************************/
+/* Observación */
+
+.eolcontainer_block .Observacion-M24{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Observacion-M24 .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 74px;
+    background-image: url(http://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_obs_med_header.svg);
+    background-size: contain;
+    z-index: 100;
+}
+.eolcontainer_block .Observacion-M24 .expmid{
+    position: relative;
+    top: 7px;
+    left: 16px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 2px solid #ebebeb;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #ebebeb;
+    text-align: justify;
+
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+}
+
+/* Intrucción */
+
+.eolcontainer_block .Instruccion-M24{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Instruccion-M24 .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 74px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_ins_med_header.svg);
+    background-size: contain;
+    z-index: 100;
+}
+.eolcontainer_block .Instruccion-M24 .expmid{
+    position: relative;
+    top: 7px;
+    left: 16px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 2px solid #ebebeb;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #ebebeb;
+    text-align: justify;
+
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+    
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+}
+
+/* Video */
+
+.eolcontainer_block .Video-M24{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Video-M24 .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 74px;
+    background-image: url(http://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_vid_med_header.svg);
+    background-size: contain;
+    z-index: 100;
+}
+.eolcontainer_block .Video-M24 .expmid{
+    position: relative;
+    top: 7px;
+    left: 16px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 2px solid #ebebeb;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #ebebeb;
+    text-align: justify;
+
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+}

@@ -33,12 +33,16 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         values = ["Generica","Contenido", "Observacion",
                   "Exploremos", "Instruccion",
                   "Respuesta", "Problema",
+                  "Observacion-M24",
+                  "Instruccion-M24",
+                  "Video-M24",
                   "Exploremos-Media", 
                   "Caso-Media", "Problema-Media", 
                   "Instruccion-Media", "Observacion-Media", 
                   "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media", "Reflexionemos",
                   "Vinculacion","Curricular","Didactica",
-                  "Caso-RedFid","Exploremos-RedFid","Observacion-RedFid","Lenguaje-RedFid","Instruccion-RedFid","Situacion-RedFid","Video-RedFid"],
+                  "Caso-RedFid","Exploremos-RedFid","Observacion-RedFid","Lenguaje-RedFid","Instruccion-RedFid","Situacion-RedFid","Video-RedFid"
+                  ],
         scope = Scope.settings
     )
 
@@ -116,7 +120,7 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         scope=Scope.settings,
     )
 
-    editable_fields = ('type', 'text', 'case_title', 'show_header', 'show_footer', 'responsive','background_color_header','background_color_icon','border_color','icon_url')
+    editable_fields = ('type', 'text', 'case_title', 'show_header', 'show_footer', 'responsive', 'background_color_header', 'background_color_icon', 'border_color', 'icon_url')
 
     def resource_string(self, path):
         """Handy helper for getting resources from our kit."""
@@ -156,6 +160,9 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
              """),
             ("Multiple EolContainerXBlock",
              """<vertical_demo>
+                <eolcontainer
+                    type="Observacion-M24"
+                />
                 <eolcontainer
                     type="Exploremos-Media"
                 />
