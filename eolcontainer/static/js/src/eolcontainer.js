@@ -15,6 +15,8 @@ function EolContainerXBlock(runtime, element, settings) {
 		if(settings.type == "Respuesta") {
 			$('#' + settings.type + settings.location +' .expmid').toggle();
 		}
+
+		MathJax.Hub.Queue(["Typeset", MathJax.Hub]); //Reconstruir latex
     });
 }
 
