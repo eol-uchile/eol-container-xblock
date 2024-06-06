@@ -33,7 +33,7 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         values = ["Generica","Contenido", "Observacion",
                   "Exploremos", "Instruccion",
                   "Respuesta", "Problema",
-                  "Observacion-M24", "Instruccion-M24", "Video-M24", "Didactica-M24", "Disciplinar-M24", "Lenguaje-M24", "Aprendizajes-M24", "Pedagogica-M24",
+                  "Observacion-M24", "Contenido-M24", "Instruccion-M24", "Video-M24", "Didactica-M24", "Disciplinar-M24", "Lenguaje-M24", "Aprendizaje-M24", "Pedagogica-M24",
                   "Exploremos-Media", 
                   "Caso-Media", "Problema-Media", 
                   "Instruccion-Media", "Observacion-Media", 
