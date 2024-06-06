@@ -1555,3 +1555,45 @@ p.case-title {
     border-top-color: currentcolor;
     border-top-style: none;
 }
+
+/* Contenido */
+
+.eolcontainer_block .Contenido-M24{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Contenido-M24 .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 74px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_cont_med_header.svg);
+    background-size: contain;
+    z-index: 100;
+}
+.eolcontainer_block .Contenido-M24 .expmid{
+    position: relative;
+    top: 7px;
+    left: 16px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 2px solid #ebebeb;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #ebebeb;
+    text-align: justify;
+
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+}
