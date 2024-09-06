@@ -1597,3 +1597,92 @@ p.case-title {
     border-top-color: currentcolor;
     border-top-style: none;
 }
+
+
+/*****************************/
+/*** Capsulas Sumo Primero ***/
+/***************************/
+
+/* Activación */
+
+.eolcontainer_block .Activacion-SP{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Activacion-SP .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 74px;
+    background-image: url(http://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_SP_Activacion_header.png);
+    background-size: contain;
+    z-index: 100;
+}
+.eolcontainer_block .Activacion-SP .expmid{
+    position: relative;
+    top: 12px;
+    left: 8px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 2px solid #f2f4f6;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #f2f4f6;
+    text-align: justify;
+
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+}
+
+/* Sistematización */
+
+.eolcontainer_block .Sistematizacion-SP{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Sistematizacion-SP .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-image: url(http://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_SP_Sistema_header.png);
+    background-size: contain;
+    z-index: 100;
+}
+.eolcontainer_block .Sistematizacion-SP .expmid{
+    position: relative;
+    top: 50px;
+    left: 8px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 2px solid #f2f4f6;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #f2f4f6;
+    text-align: justify;
+
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+}
