@@ -8,6 +8,8 @@
             {% if xblock.type == "Generica" %}
                 <div class="exptop" style=" background-color: {{ xblock.background_color_header }};
                 border-color: {{ xblock.border_color }};">
+            {% elif xblock.type == "Animalito-SP" %}
+                <div class="exptop" style="background-image: url( {{ xblock.icon_url }} );">
             {% else %}
                 <div class="exptop">
             {% endif %}

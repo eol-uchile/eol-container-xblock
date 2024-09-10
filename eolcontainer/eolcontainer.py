@@ -112,9 +112,20 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         scope=Scope.settings,
     )
 
+
+    # ICON
+    ainicon = String(
+        display_name = _("Icono"),
+        help = _("(Solo capsula Animalito) seleccione el animal de esta capsula"),
+        default = "Puma",
+        values = ["Puma","Zorro", "Monito"
+                  ],
+        scope = Scope.settings
+    )
+
     icon_url = String(
         display_name=_("Icono"),
-        help=_("(Solo capsula GENERICA) url imagen del icono"),
+        help=_("(Solo capsulas GENERICA y ANIMALITO-SP) url imagen del icono"),
         default="https://static.sumaysigue.uchile.cl/Didactica/produccion/assets/img/book.png",
         scope=Scope.settings,
     )
