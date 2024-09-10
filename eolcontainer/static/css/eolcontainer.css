@@ -1615,7 +1615,7 @@ p.case-title {
     width: var(--max-width);
     background-repeat: no-repeat;
     height: 74px;
-    background-image: url(http://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_SP_Activacion_header.png);
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_SP_Activacion_header.png);
     background-size: contain;
     z-index: 100;
 }
@@ -1627,7 +1627,7 @@ p.case-title {
     width: calc(var(--max-width) - 16px);
 
     box-sizing: border-box;
-    border: 2px solid #f2f4f6;
+    border: 3px solid #f2f4f6;
     border-radius: 20px;
     overflow: hidden;
     background-color: #f2f4f6;
@@ -1657,7 +1657,7 @@ p.case-title {
     width: var(--max-width);
     background-repeat: no-repeat;
     height: 100%;
-    background-image: url(http://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_SP_Sistema_header.png);
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_SP_Sistema_header.png);
     background-size: contain;
     z-index: 100;
 }
@@ -1685,4 +1685,167 @@ p.case-title {
 
     border-top-color: currentcolor;
     border-top-style: none;
+}
+
+/* Retroalimentación */
+
+.eolcontainer_block .Retroalimentacion-SP{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Retroalimentacion-SP .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 74px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_SP_Retro_header.png);
+    background-size: contain;
+    z-index: 100;
+}
+.eolcontainer_block .Retroalimentacion-SP .expmid{
+    position: relative;
+    top: 12px;
+    left: 8px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 3.5px dotted #c12bb2;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: justify;
+
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+}
+
+
+/* Análisis */
+
+.eolcontainer_block .Analisis-SP{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Analisis-SP .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 74px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_SP_Analisis_header.png);
+    background-size: contain;
+    z-index: 100;
+}
+.eolcontainer_block .Analisis-SP .expmid{
+    position: relative;
+    top: 12px;
+    left: 8px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 3.5px dotted #eca787;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: justify;
+
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+}
+
+/* Profundización */
+
+.eolcontainer_block .Profundizacion-SP{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Profundizacion-SP .exptop{
+    position: absolute;
+    top: 0px;
+    width: var(--max-width);
+    background-repeat: no-repeat;
+    height: 74px;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/cap_SP_Profundizacion_header.png);
+    background-size: contain;
+    z-index: 100;
+}
+.eolcontainer_block .Profundizacion-SP .expmid{
+    position: relative;
+    top: 12px;
+    left: 8px;
+
+    width: calc(var(--max-width) - 16px);
+
+    box-sizing: border-box;
+    border: 3.5px dotted #0965da;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: justify;
+
+    padding-top: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+
+    line-height: 24px;
+    z-index: 90;
+
+    border-top-color: currentcolor;
+    border-top-style: none;
+}
+
+
+/* Animalito */
+
+.eolcontainer_block .Animalito-SP{
+    min-height: 1px;
+    margin-bottom: 70px;
+}
+.eolcontainer_block .Animalito-SP .exptop{
+    position: absolute;
+    top: 0px;
+    width: 14%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-image: url(https://static.sumaysigue.uchile.cl/cmmeduformacion/produccion/assets/img/icon_puma.png);
+    background-size: contain;
+    z-index: 100;
+}
+.eolcontainer_block .Animalito-SP .expmid{
+    position: relative;
+    top: 50px;
+    left: 60px;
+
+    width: calc(var(--max-width) - 68px);
+
+    box-sizing: border-box;
+    border: 3.5px dotted #41b9bb;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: justify;
+
+    padding-top: 85px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 36px;
+
+    line-height: 24px;
+    z-index: 90;
 }

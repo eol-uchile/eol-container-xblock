@@ -40,7 +40,7 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
                   "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media", "Reflexionemos",
                   "Vinculacion","Curricular","Didactica",
                   "Caso-RedFid","Exploremos-RedFid","Observacion-RedFid","Lenguaje-RedFid","Instruccion-RedFid","Situacion-RedFid","Video-RedFid",
-                  "Activacion-SP","Sistematizacion-SP"
+                  "Activacion-SP", "Analisis-SP", "Animalito-SP", "Profundizacion-SP", "Retroalimentacion-SP","Sistematizacion-SP"
                   ],
         scope = Scope.settings
     )
