@@ -1,7 +1,7 @@
 {% if xblock.responsive %}
-<div class="eolcontainer_block xmodule_display xmodule_HtmlModule eolcontainer-responsive">
+<div class="eolcontainer_block xmodule_display xmodule_HtmlModule eolcontainer-responsive" id="container_{{ location }}">
 {% else %}
-<div class="eolcontainer_block xmodule_display xmodule_HtmlModule">
+<div class="eolcontainer_block xmodule_display xmodule_HtmlModule" id="container_{{ location }}">
 {% endif %}
     <div class="{{xblock.type}}" id="{{xblock.type}}{{location}}">
         {% if xblock.show_header %}
