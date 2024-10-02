@@ -39,7 +39,8 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
                   "Instruccion-Media", "Observacion-Media", 
                   "Objetivos-Media", "Pedagogica-Media", "Disciplinar-Media", "Video-Media", "Reflexionemos",
                   "Vinculacion","Curricular","Didactica",
-                  "Caso-RedFid","Exploremos-RedFid","Observacion-RedFid","Lenguaje-RedFid","Instruccion-RedFid","Situacion-RedFid","Video-RedFid"
+                  "Caso-RedFid","Exploremos-RedFid","Observacion-RedFid","Lenguaje-RedFid","Instruccion-RedFid","Situacion-RedFid","Video-RedFid",
+                  "Activacion-SP", "Analisis-SP", "Animalito-SP", "Profundizacion-SP", "Retroalimentacion-SP","Sistematizacion-SP"
                   ],
         scope = Scope.settings
     )
@@ -111,9 +112,20 @@ class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
         scope=Scope.settings,
     )
 
+
+    # ICON
+    ainicon = String(
+        display_name = _("Icono"),
+        help = _("(Solo capsula Animalito) seleccione el animal de esta capsula"),
+        default = "Puma",
+        values = ["Puma","Zorro", "Monito"
+                  ],
+        scope = Scope.settings
+    )
+
     icon_url = String(
         display_name=_("Icono"),
-        help=_("(Solo capsula GENERICA) url imagen del icono"),
+        help=_("(Solo capsulas GENERICA y ANIMALITO-SP) url imagen del icono"),
         default="https://static.sumaysigue.uchile.cl/Didactica/produccion/assets/img/book.png",
         scope=Scope.settings,
     )
