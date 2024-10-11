@@ -1753,7 +1753,7 @@ p.case-title {
     width: calc(var(--max-width) - 16px);
 
     box-sizing: border-box;
-    border: 3.5px dotted #eca787;
+    border: 3.5px dotted #2c63d2;
     border-radius: 20px;
     overflow: hidden;
     text-align: justify;
@@ -1794,7 +1794,7 @@ p.case-title {
     width: calc(var(--max-width) - 16px);
 
     box-sizing: border-box;
-    border: 3.5px dotted #0965da;
+    border: 3.5px dotted #e2aa8c;
     border-radius: 20px;
     overflow: hidden;
     text-align: justify;
