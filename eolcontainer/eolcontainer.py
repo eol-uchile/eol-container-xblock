@@ -9,7 +9,10 @@ from xblockutils.studio_editable import StudioEditableXBlockMixin
 
 # Make '_' a no-op so we can scrape strings
 _ = lambda text: text
-
+# Make '_
+# Make '_
+# Make '_
+# Make '_
 
 class EolContainerXBlock(StudioEditableXBlockMixin, XBlock):
 
