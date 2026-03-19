@@ -3,14 +3,14 @@ name: Python application
 on:
   push:
     branches:
-      - 'eol/test-pr-wf'
+      - 'eol-release/testprwf'
   pull_request_target:
     types:
       - opened
       - reopened
       - synchronize
     branches:
-      - 'eol/test-pr-wf'
+      - 'eol-release/testprwf'
 
 jobs:
   test:
