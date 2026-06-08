@@ -1,9 +1,6 @@
-name: Python application
+name: Python application PRs
 
 on:
-  push:
-    branches:
-      - 'eol-release/*'
   pull_request_target:
     types:
       - opened
