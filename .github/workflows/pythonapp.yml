@@ -1,9 +1,6 @@
-name: Python application
+name: Python application PRs
 
 on:
-  push:
-    branches:
-      - 'eol-release/*'
   pull_request_target:
     types:
       - opened
@@ -20,7 +17,5 @@ jobs:
       app_id: ${{ vars.EOLITO_BOT_APP_ID }}
       django-lms: true
       django-cms: false
-      platform-eol: true
-      platform-openuchile: true
     secrets:
       private_key: ${{ secrets.EOLITO_BOT_PRIVATE_KEY }}
