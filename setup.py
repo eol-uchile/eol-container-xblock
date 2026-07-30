@@ -25,7 +25,7 @@ def package_data(pkg, roots):
 
 setup(
     name='eolcontainer-xblock',
-    version='1.2.0',
+    version='1.2.1',
     description='XBlock con capsulas Suma y Sigue de CMMEduFormacion',
     license='AGPL v3',
     packages=[
